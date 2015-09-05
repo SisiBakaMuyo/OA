@@ -1,0 +1,67 @@
+#combinacoes0 {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 1500px;
+}
+
+#combinacoes1 {
+  position: absolute;
+  top: 12%;
+  left: 40%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 1500px;
+}
+
+#combinacoes2 {
+  position: absolute;
+  top: 12%;
+  left: 60%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 1500px;
+}
+
+img.combinacao {
+  width: 147px;
+  height: 46px;
+  display: none;
+}
+
+div.caixa {
+  position: absolute;
+/*  z-index:-1; */ /* XXX: estava no codigo do Carlos, mas nao funciona aqui */
+  width: 100px;
+  height: 200px;
+  background-color: rgba(128, 128, 128, 0.3);
+  filter: alpha(opacity=30); /* necessario p/ IE */
+}
+
+div.realcarSobre {
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: alpha(opacity=50); /* necessario p/ IE */
+}
+
+div.realcarDentro {
+  background-color: rgba(255, 255, 255, 0.4);
+  filter: alpha(opacity=40); /* necessario p/ IE */
+}
+
+img.aluno {
+  position: absolute;
+  cursor: move;
+  opacity: 1 !important;
+}
+
+img.professora {
+  position: absolute;
+}

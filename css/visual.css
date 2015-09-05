@@ -1,0 +1,123 @@
+body {
+  background-image: url('../img/bg.png');
+}
+
+#principal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 720px;
+  width: 960px;
+  margin-top: -380px;
+  margin-left: -480px;
+}
+
+#background {
+  position: fixed;
+  top:50%;
+  left: 50%;
+  height: 720px;
+  width: 960px;
+  margin-top: -380px;
+  margin-left: -480px;
+}
+
+.texto {
+  position: absolute;
+  padding: 10px;
+  width: 880px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: Helvetica, Corbel, Verdana, Geneva, sans-serif;
+  text-align: justify;
+  font-size: 16px;
+  filter: alpha(opacity = 50);
+}
+
+.feedback {
+  position:absolute;
+  top: 32%;
+  left: 32%;
+  padding-top: 45px;
+  padding-left: 38px;
+  padding-right: 50px;
+  height: 160px;
+  width: 280px;
+  background-image: url('../img/feedback.png');
+  font-family: Helvetica, Corbel, Verdana, Geneva, sans-serif;
+  text-align: justify;
+  font-size: 16px;
+/*  font-weight:bold; */
+  display: none;
+}
+
+img#fechar_feedback {
+  position: absolute;
+  top: 240px;
+  left: 575px;
+  display: none;
+}
+
+#balao {
+  position: absolute;
+  top: 20%;
+  right: 28%;
+  padding: 18px;
+  padding-left: 26px;
+  padding-right: 54px;
+  height: 160px;
+  width: 280px;
+  background-image: url('../img/balao.png');
+  font-family: Helvetica, Corbel, Verdana, Geneva, sans-serif;
+  text-align: justify;
+  font-size: 16px;
+/*  font-weight:bold; */
+}
+
+img.guia {
+  position: absolute;
+  right: 2%;
+  top: 32%;
+}
+
+img.txt_btn {
+  cursor:pointer;
+}
+
+img#comecar {
+  position: absolute;
+  top: 100px;
+  left: 260px;
+}
+
+img#seguir {
+  position: absolute;
+  top: 100px;
+  left: 260px;
+}
+
+img.btn {
+  position: absolute;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+
+img#voltar {
+  left: 33%;
+  bottom: 3.8%;
+}
+
+img#inicio {
+  left: 42%;
+  bottom: 3.8%;
+}
+
+img#ajuda {
+  right: 42%;
+  bottom: 3.8%;
+}
+
+img#avancar {
+  right: 33%;
+  bottom: 3.8%;
+}
