@@ -20,6 +20,9 @@ function dialog(id) {
 
 /********** BRINQUEDOS ********************************************************/
 
+
+/*** TEATRO ***/
+
 function teatro0() { 
   $('#principal').load('teatro0.htm', function() {
     $('#inicio').click(parque);
@@ -78,6 +81,101 @@ function teatro6() {
   });
 }
 
+/*** RODA GIGANTE ***/
+
+function roda0() { 
+  $('#principal').load('roda0.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(parque);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#comecar').click(roda1);
+  });
+}
+
+function roda1() { 
+  $('#principal').load('roda1.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(roda0);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+  });
+}
+
+/*** CARRINHO DE BATE-BATE ***/
+
+function carro0() { 
+  $('#principal').load('carro0.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(parque);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#comecar').click(carro1);
+  });
+}
+
+function carro1() { 
+  $('#principal').load('carro1.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(carro0);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#avancar').click(carro2);
+  });
+}
+
+function carro2() { 
+  $('#principal').load('carro2.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(carro1);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#seguir').click(carro3);
+  });
+}
+
+function carro3() { 
+  $('#principal').load('carro3.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(carro2);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#avancar').click(carro4);
+  });
+}
+
+function carro4() { 
+  $('#principal').load('carro4.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(carro3);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#seguir').click(carro5);
+  });
+}
+
+function carro5() { 
+  $('#principal').load('carro5.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(carro4);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#avancar').click(carro6);
+  });
+}
+
+function carro6() { 
+  $('#principal').load('carro6.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(carro5);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#avancar').click(carro7);
+  });
+}
+
+function carro7() { 
+  $('#principal').load('carro7.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(carro6);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#seguir').click(parque);
+  });
+}
+
+
+
 /******************************************************************************/
 
 $(document).ready(home);
@@ -96,5 +194,7 @@ function parque() {
 
     /* lista dos brinquedos e as chamadas para as respectivas telas */
     $('#teatro').click(teatro0);
+    $('#rodagigante').click(roda0);
+    $('#carro').click(carro0);
   });
 }

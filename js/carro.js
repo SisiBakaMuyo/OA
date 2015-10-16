@@ -1,57 +1,53 @@
-/* Funcoes que controlam a atividade do teatro
-*/
+/** Fórmula para permutação caótica
+	Dn = n!.[1 - 1/1! + 1/2! - 1/3! + 1/4! - ...+(-1)^n.1/n!]**/
 
-/********** Funcoes para teatro3.htm e teatro4.htm **/
+/* Funcoes que controlam a atividade do carrinho*/
 
-function desafioteatro1(form) {
+/********** Funcoes para carro5.htm e carro6.htm **/
+
+function desafiocarro1(form) {
   resposta=form.resposta.value;
-  if(resposta == "6") {
+  if(resposta == "44") {
+    dialog('#feedback1');
     alert("Parabens, voce acertou!");
-    teatro4();
+    carro6();
   }
   else{
     alert("Tente novamente!");
-    teatro3();
+    carro5();
   }  
 }
 
-function desafioteatro2(form) {
+function desafiocarro2(form) {
   resposta=form.resposta.value;
-  if(resposta == "3") {
+  if(resposta == "certo") {
     alert("Parabens, voce acertou!");
-    teatro5();
+    carro7();
   }
   else
     alert("Tente novamente!");
-    teatro4();
+    carro6();
 }
 
-/********** Funcoes para teatro1.htm **/
+
+/********** Funcoes para carro1.htm **/
 var localMenino1 = new Object();
-var localMenino2 = new Object();
 var localMenina1 = new Object();
 var localMenina2 = new Object();
-var localMenina3 = new Object();
 
 var minhaCombinacao = new Array();
 var quantos = 0;
 
 /* todas as combinacoes possiveis de alunos */
-var combinacoes = [
-  [["o1", "a1", "a2"], false],
-  [["o1", "a1", "a3"], false],
-  [["o1", "a2", "a3"], false],
-  [["o2", "a1", "a2"], false],
-  [["o2", "a1", "a3"], false],
-  [["o2", "a2", "a3"], false],
-  [["o1", "o2", "a1"], false],
-  [["o1", "o2", "a2"], false],
-  [["o1", "o2", "a3"], false]
+var combinacoes3 = [
+  [["a2", "a1", "o1"], false],
+  [["o1", "a2", "a1"], false],
 ];
 
 /* compara duas arrays contendo combinacoes de alunos
  * devolve true se forem iguais, false c.c.
  */
+
 function compara(a, b) {
   function ordem(a, b) {
   if (a.charAt(0) == b.charAt(0))
@@ -106,10 +102,8 @@ function depositar(event, ui, caixa) {
 
 function reverter() {
   $("#menino1").animate({top: localMenino1.top, left: localMenino1.left}).draggable("enable").draggable("option", "revert", true);
-  $("#menino2").animate({top: localMenino2.top, left: localMenino2.left}).draggable("enable").draggable("option", "revert", true);
   $("#menina1").animate({top: localMenina1.top, left: localMenina1.left}).draggable("enable").draggable("option", "revert", true);
   $("#menina2").animate({top: localMenina2.top, left: localMenina2.left}).draggable("enable").draggable("option", "revert", true);
-  $("#menina3").animate({top: localMenina3.top, left: localMenina3.left}).draggable("enable").draggable("option", "revert", true);
   $("#caixa1").removeClass("realcarDentro");
   $("#caixa2").removeClass("realcarDentro");
   $("#caixa3").removeClass("realcarDentro");
@@ -119,10 +113,8 @@ function reverter() {
 
 function atividade_teatro() {
   localMenino1 = $("#menino1").draggable({revert: true}).position();
-  localMenino2 = $("#menino2").draggable({revert: true}).position();
   localMenina1 = $("#menina1").draggable({revert: true}).position();
   localMenina2 = $("#menina2").draggable({revert: true}).position();
-  localMenina3 = $("#menina3").draggable({revert: true}).position();
 
   $("#caixa1").droppable({
     drop: function(event, ui){depositar(event, ui, 0)},
