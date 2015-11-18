@@ -1,0 +1,28 @@
+<div id="background" style="background-image:url('img/carro/bgprincipal.png')"/>
+
+  <div id="texto1" class="texto" style="top: 30%; left: 3%">
+    <b>Desafio 2</b>: Qual das fómulas abaixo resolve todos os problemas anteriores?  </div>
+
+  <div id="desafiocarro2" style="position: absolute; top: 280px; left: 350px; height: 150px">
+    <form>
+      <ul>
+          <li>A(n,p) = n!/(n-p)!<input class="select" type="radio" name="resposta" value="errado"/></li><br> 
+          <li>P(n) = n!/n1!* n2!* ... * nk!] <input class="select" type="radio" name="resposta" value="errado"/></li><br> 
+          <li>D(n) = n!.[1 - 1/1! + 1/2! - 1/3! + 1/4! - ...+(-1)^n.1/n!] <input class="select" type="radio" name="resposta" value="certo"/></li><br> 
+          <li>C(n,p) = n!/[(n-p)! p!] <input class="select" type="radio" name="resposta" value="errado"/></li>
+      </ul>
+      <div id="desafiocarro2" style="position: absolute; top: 160px; left: 350px; height: 500px">
+        <input type="image" title="Responder" src="img/avancar_texto.png" style="position:relative; top:11px " onClick="desafiocarro2(this.form); return false;">
+      </div>  
+    </form>
+
+  </div>
+  
+  <div id="feedback2" class="feedback">
+    Essa resposta esta errada, tente denovo.
+  </div>
+
+  <img id="voltar" class="btn" title="Voltar" src="img/voltar.png"/>
+  <img id="ajuda" class="btn" title="Ajuda" src="img/ajuda.png"/>
+  <img id="inicio" class="btn" title="Início" src="img/inicio.png"/>
+</div>
