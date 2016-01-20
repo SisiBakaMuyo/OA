@@ -36,7 +36,7 @@ var localMenina3 = new Object();
 var minhaCombinacao = new Array();
 var quantos = 0;
 
-/* todas as combinacoes possiveis de alunos */
+// /* todas as combinacoes possiveis de alunos */
 var combinacoes = [
   [["o1", "a1", "a2"], false],
   [["o1", "a1", "a3"], false],
@@ -49,9 +49,9 @@ var combinacoes = [
   [["o1", "o2", "a3"], false]
 ];
 
-/* compara duas arrays contendo combinacoes de alunos
- * devolve true se forem iguais, false c.c.
- */
+//  compara duas arrays contendo combinacoes de alunos
+//  * devolve true se forem iguais, false c.c.
+ 
 function compara(a, b) {
   function ordem(a, b) {
   if (a.charAt(0) == b.charAt(0))

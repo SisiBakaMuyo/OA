@@ -31,6 +31,39 @@
   width: 1500px;
 }
 
+#combinacoes3 {
+  position: absolute;
+  top: 8%;
+  left: 80%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 1500px;
+}
+
+#combinacoes4 {
+  position: absolute;
+  top: 8%;
+  left: 60%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 1500px;
+}
+
+#combinacoes01 {
+  position: absolute;
+  top: 12%;
+  left: 60%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 1500px;
+}
+
 img.combinacao {
   width: 147px;
   height: 46px;
@@ -39,9 +72,16 @@ img.combinacao {
 
 div.caixa {
   position: absolute;
-/*  z-index:-1; */ /* XXX: estava no codigo do Carlos, mas nao funciona aqui */
   width: 100px;
   height: 200px;
+  background-color: rgba(128, 128, 128, 0.3);
+  filter: alpha(opacity=30); /* necessario p/ IE */
+}
+
+div.caixa_carro {
+  position: absolute;
+  width: 100px;
+  height: 250px;
   background-color: rgba(128, 128, 128, 0.3);
   filter: alpha(opacity=30); /* necessario p/ IE */
 }
@@ -63,9 +103,5 @@ img.aluno {
 }
 
 img.professora {
-  position: absolute;
-}
-
-img.chave {
   position: absolute;
 }

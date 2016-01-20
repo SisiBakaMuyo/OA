@@ -37,7 +37,7 @@ function teatro1() {
     $('#inicio').click(parque);
     $('#voltar').click(teatro0);
     $('#ajuda').click({param1: '#feedback0'}, feedback);
-    $('#avancar').click(teatro2);
+    $('#pergunta').click({param1: '#feedback5'}, feedback);
 
     atividade_teatro();
   });
@@ -97,6 +97,45 @@ function roda1() {
     $('#inicio').click(parque);
     $('#voltar').click(roda0);
     $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#pergunta').click({param1: '#feedback5'}, feedback);
+    atividade_roda()
+  });
+}
+
+function roda2() { 
+  $('#principal').load('roda2.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(parque);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#comecar').click(roda3);
+  });
+}
+
+function roda3() { 
+  $('#principal').load('roda3.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(parque);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#comecar').click(roda4);
+  });
+}
+
+function roda4() { 
+  $('#principal').load('roda4.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(parque);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+  });
+}
+
+function roda5() { 
+  $('#principal').load('roda5.htm', function() {
+    $('#inicio').click(parque);
+    $('#voltar').click(parque);
+    $('#ajuda').click({param1: '#feedback0'}, feedback);
+    $('#avancar').click(parque);
+    $('#seguir').click(parque);
+
   });
 }
 
@@ -116,7 +155,8 @@ function carro1() {
     $('#inicio').click(parque);
     $('#voltar').click(carro0);
     $('#ajuda').click({param1: '#feedback0'}, feedback);
-    $('#avancar').click(carro2);
+    $('#pergunta').click({param1: '#feedback5'}, feedback);
+    atividade_carrinho() 
   });
 }
 
@@ -134,7 +174,8 @@ function carro3() {
     $('#inicio').click(parque);
     $('#voltar').click(carro2);
     $('#ajuda').click({param1: '#feedback0'}, feedback);
-    $('#avancar').click(carro4);
+    $('#pergunta').click({param1: '#feedback5'}, feedback);
+    atividade_carrinho2()
   });
 }
 
@@ -161,18 +202,12 @@ function carro6() {
     $('#inicio').click(parque);
     $('#voltar').click(carro5);
     $('#ajuda').click({param1: '#feedback0'}, feedback);
-    $('#avancar').click(carro7);
+    $('#avancar').click(parque);
+    $('#seguir').click(parque);
+
   });
 }
 
-function carro7() { 
-  $('#principal').load('carro7.htm', function() {
-    $('#inicio').click(parque);
-    $('#voltar').click(carro6);
-    $('#ajuda').click({param1: '#feedback0'}, feedback);
-    $('#seguir').click(parque);
-  });
-}
 
 
 

@@ -30,7 +30,7 @@ body {
   font-family: Helvetica, Corbel, Verdana, Geneva, sans-serif;
   text-align: justify;
   font-size: 16px;
-  filter: alpha(opacity = 50);
+  filter: alpha(opacity = 30);
 }
 
 .feedback {
@@ -79,6 +79,12 @@ img.guia {
   top: 32%;
 }
 
+img.guia2 {
+  position: absolute;
+  right: 2%;
+  top: 28%;
+}
+
 img.txt_btn {
   cursor:pointer;
 }
@@ -119,5 +125,10 @@ img#ajuda {
 
 img#avancar {
   right: 33%;
+  bottom: 3.8%;
+}
+
+img#pergunta {
+  right: 10%;
   bottom: 3.8%;
 }
